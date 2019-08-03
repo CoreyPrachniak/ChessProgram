@@ -4,6 +4,7 @@ import itertools
 print("\nWelcome to Corey’s chess program! Please enter a string of legal moves in Algebraic Chess notation,")
 print("and the program will output the resulting position. For additional instructions, see below:")
 print("\n- This program can handle all chess moves that could be legal for some existing chess position.")
+print("- Moves that are not legal for any chess position will result in the message invalid move.")
 print("- Enter moves <chess location> to see the legal movements of the piece on <chess location>.")
 print("- Moves may be entered omitting the numbers that represent move number.")
 print("- Enter a chess location to see all of the legal movements of the piece")
@@ -580,6 +581,7 @@ def main():
                             play = False
             except (ValueError, IndexError):
                 print("Invalid move.")
+                break
 
         if "#" in users_input:
             if is_white_turn(board_history):
