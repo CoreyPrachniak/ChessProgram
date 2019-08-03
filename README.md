@@ -4,6 +4,7 @@ Welcome to Corey’s chess program! Please enter a string of legal moves in Alge
 and the program will output the resulting position. For additional instructions, see below:
 
 - This program can handle all chess moves that could be legal for some existing chess position.
+- Moves that are not legal for any chess position will result in the message "invalid move".
 - Enter moves \<chess location\> to see the legal movements of the piece on \<chess location\>.
 - Moves may be entered omitting the numbers that represent move number.
 - You may go back to a previous positions by repeatedly entering Undo.
