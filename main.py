@@ -507,6 +507,7 @@ def print_game_so_far(game_so_far):
             print(game_so_far[i], end=" ")
     print("")
 
+
 def initialize_board():
 
     locations = {"P": ["a2", "b2", "c2", "d2", "e2", "f2", "g2", "h2"], "R": ["a1", "h1"], "N": ["b1", "g1"],
@@ -577,7 +578,7 @@ def main():
                             print("Stalemate :)")
                             print_game_so_far(game_so_far)
                             play = False
-            except ValueError:
+            except (ValueError, IndexError):
                 print("Invalid move.")
 
         if "#" in users_input:
